@@ -173,7 +173,7 @@ If you find either the code or the paper useful for your research, please cite o
   url = {https://arxiv.org/abs/2206.05970},  
   author = {Aharon, Shai and Ben-Artzi, Gil},    
   title = {HyperRes: Hypernetwork-Based Adaptive Image Restoration},  
-  publisher = {ICASP},  
+  publisher = {ICASSP},  
   year = {2023},  
   copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International}
 }
