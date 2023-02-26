@@ -8,25 +8,6 @@ by [Shai Aharon](https://www.linkedin.com/in/shai-aharon-b4495273/) and [Dr. Gil
   Official Implementation: **Hypernetwork-Based Adaptive Image Restoration** 
 </div>  
    	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma5)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma5?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma25)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma25?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma35)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma35?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma45)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma45?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma55)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma55?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma65)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma65?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma75)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma75?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-denoising-on-cbsd68-sigma85)](https://paperswithcode.com/sota/image-denoising-on-cbsd68-sigma85?p=one-size-fits-all-hypernetwork-for-tunable)	
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/jpeg-artifact-removal-on-live1-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-removal-on-live1-quality-10?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/jpeg-artifact-removal-on-live1-quality-30)](https://paperswithcode.com/sota/jpeg-artifact-removal-on-live1-quality-30?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/jpeg-artifact-removal-on-live1-quality-50)](https://paperswithcode.com/sota/jpeg-artifact-removal-on-live1-quality-50?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/jpeg-artifact-removal-on-live1-quality-70)](https://paperswithcode.com/sota/jpeg-artifact-removal-on-live1-quality-70?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/jpeg-artifact-removal-on-live1-quality-80)](https://paperswithcode.com/sota/jpeg-artifact-removal-on-live1-quality-80?p=one-size-fits-all-hypernetwork-for-tunable)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/super-resolution-on-set5-3x-upscaling)](https://paperswithcode.com/sota/super-resolution-on-set5-3x-upscaling?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-super-resolution-on-set5-5x-upscaling)](https://paperswithcode.com/sota/image-super-resolution-on-set5-5x-upscaling?p=one-size-fits-all-hypernetwork-for-tunable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/one-size-fits-all-hypernetwork-for-tunable/image-super-resolution-on-set5-6x-upscaling)](https://paperswithcode.com/sota/image-super-resolution-on-set5-6x-upscaling?p=one-size-fits-all-hypernetwork-for-tunable)
-
 
 <p align="center">
 <img src="figures/train_arc.png" width="800"/>
