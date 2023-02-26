@@ -29,8 +29,6 @@ from utils.DataUtils.CommonTools import calculate_psnr, saveImage, weights_init_
 from utils.DataUtils.TrainLoader import NoisyDataset
 import cv2
 
-import wandb
-
 parser = argparse.ArgumentParser(description='PyTorch Multiple Objectives Network Training')
 parser.add_argument('--data', metavar='DIR', help='path to dataset')
 parser.add_argument('--workers', default=0, type=int, metavar='N',
@@ -69,13 +67,6 @@ parser.add_argument('-y', '-Y', '--gray', dest='y_channel', default=False, actio
                     help='Train on Grayscale only')
 parser.add_argument('--data_type', type=str, default='n', choices=['n', 'sr', 'j'],
                     help='Defines the task data, de(n)oise, super-resolution(sr), de(j)peg.')
-
-def uploadFiles2Wandb(file_lst):
-    os.makedirs(os.path.join(wandb.run.dir, 'myFiles'), exist_ok=True)
-    for f in file_lst:
-        if os.path.exists(f):
-            shutil.copyfile(f, os.path.join(wandb.run.dir, 'myFiles', os.path.basename(f)))
-            wandb.save(wandb.run.dir + '/myFiles/' + os.path.basename(f))
 
 def main():
     global args
@@ -160,13 +151,6 @@ def main():
     tot_epochs = int(np.ceil(args.steps / data_set_len)) * 16 + 5
     args.epochs = tot_epochs
     val_idx = 0
-
-    wandb.init(project="HyperRes", name=args.checkpoint[args.checkpoint.rfind('/')+1:])
-    print()
-    uploadFiles2Wandb([
-        'models/HyperRes.py',
-        'models/Unet.py',
-    ])
 
     global curr_step
     curr_step = 0
@@ -261,7 +245,6 @@ def train(train_loader, model, criterion, optimizer):
 
         log_stat = {"Loss": loss.item(), 'LR': optimizer.param_groups[0]['lr']}
         curr_step += 1 #train_loader.batch_size
-        wandb.log(log_stat, step=curr_step)
 
         losses.update(loss.item())
         if i % 10 == 0:
@@ -307,7 +290,6 @@ def evaluate(val_loader, val_loader_len, model, criterion,val_phase='Test'):
                             output[j].detach().cpu().numpy()[0],
                             images[j].detach().cpu().numpy()[0],
                             j)
-                    wand_img.append(wandb.Image(im1))
 
                 # Measure PSNR
                 for out_idx, out in enumerate(output[j]):
@@ -320,13 +302,6 @@ def evaluate(val_loader, val_loader_len, model, criterion,val_phase='Test'):
     # Switch back to train mode
     model.train()
 
-    payload = list(chain.from_iterable(zip(wand_img)))
-    wandb.log({"val_img".format(smp_plot_n): payload}, commit=False)
-    log_stat = {val_phase + " Loss": losses.avg}
-    for i, sig in enumerate(args.lvls):
-        log_stat[val_phase+ ' PSNR ' + str(sig)] = lvl_loss[i].avg
-    global curr_step
-    wandb.log(log_stat, step=curr_step) 
     return losses.avg, [t.avg for t in lvl_loss]
 
 
