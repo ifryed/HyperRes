@@ -132,8 +132,7 @@ python train_main.py       \
         --data_type [n,sr,j]    \
         --lvls 15 35 50 75      \
         --checkpoint [SavePath] \
-        --device [cpu/cuda]     \       
-        --no_bn                 
+        --device [cpu/cuda]       
 ```
 
 </details>
@@ -149,8 +148,7 @@ python test_main.py                          \
         --lvls [15 45 75]                         \
         --valid [test folder inside data]         \                              
         --weights [path to weights file (*.pth)]  \ 
-        --device [cpu/cuda]                       \
-        --no_bn
+        --device [cpu/cuda]                       
 ```
 </details>
 
@@ -162,7 +160,6 @@ python live_demo.py                                       \
         --input [Path to image folder or image]           \
         --data_type [n,sr,j]                              \
         --checkpoint [Path to weights file (*.pth)]       \ 
-        --no_bn 
 ```
 </details>
 
