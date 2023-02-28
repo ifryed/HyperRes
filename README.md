@@ -47,6 +47,8 @@ The graph below, compares our method and STOA methods to the optimal accuracy (t
 
 ## Colab Demo
  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ifryed/HyperRes/blob/master/notebooks/HyperRes_demo.ipynb)
+ * This demo is intended to experience the "controllable" feature of our network, to experience the <i>real-time</i> adjustment I recommend looking at the [Live Demo](https://github.com/ifryed/HyperRes/edit/master/README.md#live-demo) section below.
+ 
 ## Requirements
 <details>
 
