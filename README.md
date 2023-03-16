@@ -6,6 +6,8 @@ by [Shai Aharon](https://www.linkedin.com/in/shai-aharon-b4495273/) and [Dr. Gil
 [![Arxiv](https://img.shields.io/badge/ArXiv-2202.04731-orange.svg?color=red)](https://arxiv.org/abs/2206.05970)
 
   Official Implementation: **Hypernetwork-Based Adaptive Image Restoration** 
+  
+  [Project Page](http://gil-ba.com/hyperres/HyperRes-webpage.html)
 </div>  
    	
 
