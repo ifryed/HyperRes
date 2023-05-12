@@ -179,3 +179,6 @@ If you find either the code or the paper useful for your research, please cite o
   copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International}
 }
 ```
+
+## Contact
+  For any questions and/or remarks feel free to contact me at shaiaha at bgu.ac.il
