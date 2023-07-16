@@ -33,18 +33,7 @@ class NoiseNet(nn.Module):
             ResBlock(64,64),
             nn.MaxPool2d(2,2),
         )
-        # self.conv_seq = nn.Sequential(
-        #     nn.Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=1),
-        #     nn.MaxPool2d(2,2),
-        #     # nn.ReLU(),
-        #     nn.Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=1),
-        #     nn.MaxPool2d(2,2),
-        #     # nn.ReLU(),
-        #     # nn.Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=1),
-        #     # nn.ReLU(),
-        #     # nn.Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=1),
-        #     # nn.ReLU(),
-        # )
+        
         self.fc_seq = nn.Sequential(
             nn.Linear(64 * 4 ** 2, 32),
             nn.ReLU(),
